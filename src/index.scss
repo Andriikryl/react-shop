@@ -1,0 +1,109 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+.wrapper{
+  $max-width: 1000px;
+  $padding: 1rem;
+  width: min($max-width, 100% - $padding);
+  margin-inline: auto;
+}
+
+.header{
+  padding-block: 40px;
+}
+
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.presentation{
+  margin-block: 40px;
+  background:  url('./images/forest__1_by_marc_andre_dfhjmu8-pre.jpg');
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  &::after{
+    content: "best staff";
+    position: absolute;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    top: 100xp;
+    left: 50px;
+  }
+}
+
+.footer{
+  text-align: center;
+  margin-block-start: 100px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list{
+  display: flex;
+  gap: 20px;
+}
+
+.nav__item{
+  list-style: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.nav__link{
+  cursor: pointer;
+  transition: 1s ease;
+  &:hover{
+    color: tomato;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
